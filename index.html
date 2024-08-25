@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Frontend</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form id="body">
+      <h1>Foro de consulta</h1>
+      <div class="inputs">
+        <div>
+            <label class="label" for="Nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="Nombre" required />
+        </div>  
+        </div>
+        <div><label class="label" for="Correo">Correo electronico:</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="Options">
+        <label for="select">Seleccione el area de consulta:</label>
+        <select id="select" name="opcion">
+          <option value="Programacion Frontend">Programacion Frontend</option>
+          <option value="Programacion Backend">Programacion Backend</option>
+          <option value="Practicas Profecionalizantes">Practicas Profecionalizantes</option>
+          <option value="Laboratorio FullStack II">Laboratorio FullStack II</option>
+          <option value="Integración de Aplicaciones">Integración de Aplicaciones</option>
+          <option value="Secretaria">Secretaria</option>
+        </select>
+      </div>
+
+      <div class="textArea">
+        <label for="textarea">Área de Texto:</label>
+        <textarea
+          id="textarea"
+          name="texto"
+          rows="4"
+          cols="50"
+          placeholder="Mi consulta es..."
+        ></textarea>
+      </div>
+
+      <button type="button" onclick="enviarFormulario()">Enviar</button>
+    </form>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
